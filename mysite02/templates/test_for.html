@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test for</title>
+</head>
+<body>
+
+{% for i in lst %}
+    <p>
+        {{ forloop.counter }}姓名: {{ i }}
+    </p>
+{% empty %}
+    <p>
+        该值为空
+    </p>
+{%　endfor %}
+</body>
+</html>
